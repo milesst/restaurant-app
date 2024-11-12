@@ -1,0 +1,22 @@
+// Load Bulma's base styles and themes (including the minireset)
+@use "bulma/sass/base";
+@use "bulma/sass/themes";
+
+// Load other Bulma components
+@use "bulma/sass/elements/button";
+@use "bulma/sass/components/navbar";
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}

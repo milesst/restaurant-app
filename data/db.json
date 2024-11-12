@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Пицца 4 сыра",
+            "description": "32434324",
+            "category": "Пицца",
+            "price": 455
+        },
+        {
+            "id": "2",
+            "name": "Пицца Маргарита",
+            "description": "gregwgw",
+            "category": "Пицца",
+            "price": 450
+        },
+        {
+            "id": "3",
+            "name": "Пицца Ветчина и грибы",
+            "description": "fgmrekglel",
+            "category": "Пицца",
+            "price": 590
+        },
+        {
+            "id": "4",
+            "name": "Роллы Филадельфия",
+            "description": "fgmrekglel",
+            "category": "Роллы",
+            "price": 9999
+        },
+        {
+            "id": "5",
+            "name": "Чизкейк",
+            "description": "fgmrekglel",
+            "category": "Десерты",
+            "price": 250
+        },
+        {
+            "id": "6",
+            "name": "Котлетка с пюрешкой",
+            "description": "fgmrekglel",
+            "category": "Горячее",
+            "price": 778
+        }
+    ]
+}
