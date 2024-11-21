@@ -23,12 +23,10 @@ watch(category, async (newCategory: MenuCategory | null) => {
         v-model="category"
         ></TheSidebar>
         <div class="is-flex-grow-1 p-5" v-if="category">
-            <div v-if="!isLoading" class="fixed-grid has-4-cols">
-            <div  class="product-list-wrap grid ">
+            <div v-if="!isLoading" class="product-list-wrap grid is-col-min-10">
                 <ProductCard v-for="product in products" :key="product.id" :product="product"></ProductCard>
                 <div v-if="products.length === 0">No Products</div>
             </div>
-        </div>
             <div v-else>Loading...</div>
         </div>
         <div v-else>
@@ -36,3 +34,11 @@ watch(category, async (newCategory: MenuCategory | null) => {
         </div>
     </div>
 </template>
+
+<style scoped lang="scss">
+@import '../assets/_colors.scss';
+
+.card {
+    margin-bottom: var(--bulma-block-spacing);
+}
+</style>

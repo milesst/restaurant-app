@@ -3,8 +3,11 @@ import { computed } from 'vue';
 import CartItem from '../components/CartItem.vue';
 import { useCartStore } from '../store/Cart.store';
 import { useRouter } from 'vue-router';
+import { useAppStore } from '../store/App.store';
 
 const store = useCartStore()
+const commonStore = useAppStore()
+
 const router = useRouter()
 
 const totalPrice = computed(() => {
@@ -13,6 +16,9 @@ const totalPrice = computed(() => {
     }, 0)
 })
 const createOrder = () => {
+    commonStore.createToast({
+        message: 'Заказ создан'
+    })
     router.push('/')
     store.resetCart()
 }

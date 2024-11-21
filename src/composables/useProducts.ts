@@ -10,7 +10,7 @@ export const useProducts = () => {
     const loadProducts = async (category?: MenuCategory | null) => {
         try {
             let result = await getProducts(category?.name)
-            if (!result.status === 200) {
+            if (result.status !== 200) {
                 throw Error('error')
             }
             products.value = result.data

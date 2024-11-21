@@ -59,7 +59,7 @@ const handleAddToCart = (product: Product) => {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @import '../assets/_colors.scss';
 
 .price-wrap {
@@ -70,6 +70,12 @@ const handleAddToCart = (product: Product) => {
 
 .primary-icon * {
   color: white !important;
+}
+
+.card {
+  .title {
+    height: 3rem;
+  }
 }
 
 </style>
